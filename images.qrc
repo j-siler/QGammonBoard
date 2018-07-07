@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="Images">
+    <file>Images/PointBottomBlack.png</file>
+    <file>Images/PointBottomWhite.png</file>
+    <file>Images/PointTopBlack.png</file>
+    <file>Images/PointTopWhite.png</file>
+  </qresource>
+</RCC>
