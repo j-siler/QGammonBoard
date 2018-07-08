@@ -22,7 +22,12 @@ Game::Game() {
   widget.redBar->setStyleSheet("background-color:darkgreen;");
   widget.blackBar->setStyleSheet("background-color:darkgreen;");
   widget.inititalCube->setStyleSheet("background-color:darkgreen;");
-  
+  widget.leftBoardDivider->setStyleSheet("background-color:darkgreen;");
+  widget.rightBoardDivider->setStyleSheet("background-color:darkgreen;");
+  widget.blackCube->setStyleSheet("background-color:darkgreen;");
+  widget.redCube->setStyleSheet("background-color:darkgreen;");
+  widget.blackOff->setStyleSheet("background-color:darkgreen;");
+  widget.redOff->setStyleSheet("background-color:darkgreen;");
 }
 
 Game::~Game() {

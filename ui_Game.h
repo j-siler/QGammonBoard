@@ -13,9 +13,9 @@
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QGraphicsView>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
@@ -34,20 +34,21 @@ public:
     QVBoxLayout *verticalLayout;
     QWidget *blackOuterBoard;
     QHBoxLayout *horizontalLayout_2;
-    QGraphicsView *graphicsView;
-    QGraphicsView *graphicsView_2;
-    QGraphicsView *graphicsView_3;
-    QGraphicsView *graphicsView_4;
-    QGraphicsView *graphicsView_5;
-    QGraphicsView *graphicsView_6;
+    QLabel *pt13;
+    QLabel *pt14;
+    QLabel *pt15;
+    QLabel *pt16;
+    QLabel *pt17;
+    QLabel *pt18;
+    QWidget *leftBoardDivider;
     QWidget *redOuterBoard;
     QHBoxLayout *horizontalLayout_3;
-    QGraphicsView *graphicsView_9;
-    QGraphicsView *graphicsView_11;
-    QGraphicsView *graphicsView_7;
-    QGraphicsView *graphicsView_12;
-    QGraphicsView *graphicsView_10;
-    QGraphicsView *graphicsView_8;
+    QLabel *pt12;
+    QLabel *pt11;
+    QLabel *pt10;
+    QLabel *pt09;
+    QLabel *pt08;
+    QLabel *pt07;
     QWidget *bar;
     QVBoxLayout *verticalLayout_3;
     QWidget *redBar;
@@ -57,26 +58,27 @@ public:
     QVBoxLayout *verticalLayout_2;
     QWidget *blackInnerBoard;
     QHBoxLayout *horizontalLayout_4;
-    QGraphicsView *graphicsView_13;
-    QGraphicsView *graphicsView_14;
-    QGraphicsView *graphicsView_15;
-    QGraphicsView *graphicsView_16;
-    QGraphicsView *graphicsView_17;
-    QGraphicsView *graphicsView_18;
+    QLabel *pt19;
+    QLabel *pt20;
+    QLabel *pt21;
+    QLabel *pt22;
+    QLabel *pt23;
+    QLabel *pt24;
+    QWidget *rightBoardDivider;
     QWidget *redInnerBoard;
     QHBoxLayout *horizontalLayout_5;
-    QGraphicsView *graphicsView_19;
-    QGraphicsView *graphicsView_20;
-    QGraphicsView *graphicsView_21;
-    QGraphicsView *graphicsView_22;
-    QGraphicsView *graphicsView_23;
-    QGraphicsView *graphicsView_24;
+    QLabel *pt06;
+    QLabel *pt05;
+    QLabel *pt04;
+    QLabel *pt02;
+    QLabel *pt01;
+    QLabel *pt03;
     QWidget *off;
     QVBoxLayout *verticalLayout_4;
-    QWidget *widget;
-    QWidget *widget_2;
-    QWidget *widget_3;
-    QWidget *widget_4;
+    QWidget *blackCube;
+    QWidget *blackOff;
+    QWidget *redOff;
+    QWidget *redCube;
     QMenuBar *menubar;
     QMenu *menuBoard;
     QMenu *menuOptions;
@@ -86,7 +88,7 @@ public:
     {
         if (Game->objectName().isEmpty())
             Game->setObjectName(QStringLiteral("Game"));
-        Game->resize(1057, 551);
+        Game->resize(1057, 768);
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(1);
         sizePolicy.setVerticalStretch(13);
@@ -107,140 +109,180 @@ public:
         leftBoard->setSizePolicy(sizePolicy1);
         leftBoard->setMinimumSize(QSize(360, 0));
         verticalLayout = new QVBoxLayout(leftBoard);
-        verticalLayout->setSpacing(2);
+        verticalLayout->setSpacing(0);
         verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        verticalLayout->setContentsMargins(2, 2, 2, 2);
+        verticalLayout->setContentsMargins(0, 0, 0, 0);
         blackOuterBoard = new QWidget(leftBoard);
         blackOuterBoard->setObjectName(QStringLiteral("blackOuterBoard"));
         QSizePolicy sizePolicy2(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy2.setHorizontalStretch(6);
-        sizePolicy2.setVerticalStretch(1);
+        sizePolicy2.setVerticalStretch(8);
         sizePolicy2.setHeightForWidth(blackOuterBoard->sizePolicy().hasHeightForWidth());
         blackOuterBoard->setSizePolicy(sizePolicy2);
         horizontalLayout_2 = new QHBoxLayout(blackOuterBoard);
+        horizontalLayout_2->setSpacing(2);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        graphicsView = new QGraphicsView(blackOuterBoard);
-        graphicsView->setObjectName(QStringLiteral("graphicsView"));
-        QSizePolicy sizePolicy3(QSizePolicy::MinimumExpanding, QSizePolicy::Expanding);
-        sizePolicy3.setHorizontalStretch(0);
-        sizePolicy3.setVerticalStretch(0);
-        sizePolicy3.setHeightForWidth(graphicsView->sizePolicy().hasHeightForWidth());
-        graphicsView->setSizePolicy(sizePolicy3);
-        graphicsView->setMinimumSize(QSize(60, 0));
-        graphicsView->setInteractive(false);
+        horizontalLayout_2->setContentsMargins(2, 2, 2, 2);
+        pt13 = new QLabel(blackOuterBoard);
+        pt13->setObjectName(QStringLiteral("pt13"));
+        QSizePolicy sizePolicy3(QSizePolicy::Preferred, QSizePolicy::Ignored);
+        sizePolicy3.setHorizontalStretch(1);
+        sizePolicy3.setVerticalStretch(1);
+        sizePolicy3.setHeightForWidth(pt13->sizePolicy().hasHeightForWidth());
+        pt13->setSizePolicy(sizePolicy3);
+        pt13->setMinimumSize(QSize(60, 0));
+        pt13->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopBlack.png")));
+        pt13->setScaledContents(true);
 
-        horizontalLayout_2->addWidget(graphicsView);
+        horizontalLayout_2->addWidget(pt13);
 
-        graphicsView_2 = new QGraphicsView(blackOuterBoard);
-        graphicsView_2->setObjectName(QStringLiteral("graphicsView_2"));
-        sizePolicy3.setHeightForWidth(graphicsView_2->sizePolicy().hasHeightForWidth());
-        graphicsView_2->setSizePolicy(sizePolicy3);
-        graphicsView_2->setMinimumSize(QSize(60, 0));
+        pt14 = new QLabel(blackOuterBoard);
+        pt14->setObjectName(QStringLiteral("pt14"));
+        sizePolicy3.setHeightForWidth(pt14->sizePolicy().hasHeightForWidth());
+        pt14->setSizePolicy(sizePolicy3);
+        pt14->setMinimumSize(QSize(60, 0));
+        pt14->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopWhite.png")));
+        pt14->setScaledContents(true);
 
-        horizontalLayout_2->addWidget(graphicsView_2);
+        horizontalLayout_2->addWidget(pt14);
 
-        graphicsView_3 = new QGraphicsView(blackOuterBoard);
-        graphicsView_3->setObjectName(QStringLiteral("graphicsView_3"));
-        sizePolicy3.setHeightForWidth(graphicsView_3->sizePolicy().hasHeightForWidth());
-        graphicsView_3->setSizePolicy(sizePolicy3);
-        graphicsView_3->setMinimumSize(QSize(60, 0));
+        pt15 = new QLabel(blackOuterBoard);
+        pt15->setObjectName(QStringLiteral("pt15"));
+        sizePolicy3.setHeightForWidth(pt15->sizePolicy().hasHeightForWidth());
+        pt15->setSizePolicy(sizePolicy3);
+        pt15->setMinimumSize(QSize(60, 0));
+        pt15->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopBlack.png")));
+        pt15->setScaledContents(true);
 
-        horizontalLayout_2->addWidget(graphicsView_3);
+        horizontalLayout_2->addWidget(pt15);
 
-        graphicsView_4 = new QGraphicsView(blackOuterBoard);
-        graphicsView_4->setObjectName(QStringLiteral("graphicsView_4"));
-        sizePolicy3.setHeightForWidth(graphicsView_4->sizePolicy().hasHeightForWidth());
-        graphicsView_4->setSizePolicy(sizePolicy3);
-        graphicsView_4->setMinimumSize(QSize(60, 0));
+        pt16 = new QLabel(blackOuterBoard);
+        pt16->setObjectName(QStringLiteral("pt16"));
+        sizePolicy3.setHeightForWidth(pt16->sizePolicy().hasHeightForWidth());
+        pt16->setSizePolicy(sizePolicy3);
+        pt16->setMinimumSize(QSize(60, 0));
+        pt16->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopWhite.png")));
+        pt16->setScaledContents(true);
 
-        horizontalLayout_2->addWidget(graphicsView_4);
+        horizontalLayout_2->addWidget(pt16);
 
-        graphicsView_5 = new QGraphicsView(blackOuterBoard);
-        graphicsView_5->setObjectName(QStringLiteral("graphicsView_5"));
-        sizePolicy3.setHeightForWidth(graphicsView_5->sizePolicy().hasHeightForWidth());
-        graphicsView_5->setSizePolicy(sizePolicy3);
-        graphicsView_5->setMinimumSize(QSize(60, 0));
+        pt17 = new QLabel(blackOuterBoard);
+        pt17->setObjectName(QStringLiteral("pt17"));
+        sizePolicy3.setHeightForWidth(pt17->sizePolicy().hasHeightForWidth());
+        pt17->setSizePolicy(sizePolicy3);
+        pt17->setMinimumSize(QSize(60, 0));
+        pt17->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopBlack.png")));
+        pt17->setScaledContents(true);
 
-        horizontalLayout_2->addWidget(graphicsView_5);
+        horizontalLayout_2->addWidget(pt17);
 
-        graphicsView_6 = new QGraphicsView(blackOuterBoard);
-        graphicsView_6->setObjectName(QStringLiteral("graphicsView_6"));
-        sizePolicy3.setHeightForWidth(graphicsView_6->sizePolicy().hasHeightForWidth());
-        graphicsView_6->setSizePolicy(sizePolicy3);
-        graphicsView_6->setMinimumSize(QSize(60, 0));
+        pt18 = new QLabel(blackOuterBoard);
+        pt18->setObjectName(QStringLiteral("pt18"));
+        sizePolicy3.setHeightForWidth(pt18->sizePolicy().hasHeightForWidth());
+        pt18->setSizePolicy(sizePolicy3);
+        pt18->setMinimumSize(QSize(60, 0));
+        pt18->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopWhite.png")));
+        pt18->setScaledContents(true);
 
-        horizontalLayout_2->addWidget(graphicsView_6);
+        horizontalLayout_2->addWidget(pt18);
 
 
         verticalLayout->addWidget(blackOuterBoard);
+
+        leftBoardDivider = new QWidget(leftBoard);
+        leftBoardDivider->setObjectName(QStringLiteral("leftBoardDivider"));
+        QSizePolicy sizePolicy4(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy4.setHorizontalStretch(6);
+        sizePolicy4.setVerticalStretch(1);
+        sizePolicy4.setHeightForWidth(leftBoardDivider->sizePolicy().hasHeightForWidth());
+        leftBoardDivider->setSizePolicy(sizePolicy4);
+
+        verticalLayout->addWidget(leftBoardDivider);
 
         redOuterBoard = new QWidget(leftBoard);
         redOuterBoard->setObjectName(QStringLiteral("redOuterBoard"));
         sizePolicy2.setHeightForWidth(redOuterBoard->sizePolicy().hasHeightForWidth());
         redOuterBoard->setSizePolicy(sizePolicy2);
         horizontalLayout_3 = new QHBoxLayout(redOuterBoard);
+        horizontalLayout_3->setSpacing(2);
         horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
-        graphicsView_9 = new QGraphicsView(redOuterBoard);
-        graphicsView_9->setObjectName(QStringLiteral("graphicsView_9"));
-        sizePolicy3.setHeightForWidth(graphicsView_9->sizePolicy().hasHeightForWidth());
-        graphicsView_9->setSizePolicy(sizePolicy3);
-        graphicsView_9->setMinimumSize(QSize(60, 0));
+        horizontalLayout_3->setContentsMargins(2, 2, 2, 2);
+        pt12 = new QLabel(redOuterBoard);
+        pt12->setObjectName(QStringLiteral("pt12"));
+        sizePolicy3.setHeightForWidth(pt12->sizePolicy().hasHeightForWidth());
+        pt12->setSizePolicy(sizePolicy3);
+        pt12->setMinimumSize(QSize(60, 0));
+        pt12->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomWhite.png")));
+        pt12->setScaledContents(true);
 
-        horizontalLayout_3->addWidget(graphicsView_9);
+        horizontalLayout_3->addWidget(pt12);
 
-        graphicsView_11 = new QGraphicsView(redOuterBoard);
-        graphicsView_11->setObjectName(QStringLiteral("graphicsView_11"));
-        sizePolicy3.setHeightForWidth(graphicsView_11->sizePolicy().hasHeightForWidth());
-        graphicsView_11->setSizePolicy(sizePolicy3);
-        graphicsView_11->setMinimumSize(QSize(60, 0));
+        pt11 = new QLabel(redOuterBoard);
+        pt11->setObjectName(QStringLiteral("pt11"));
+        sizePolicy3.setHeightForWidth(pt11->sizePolicy().hasHeightForWidth());
+        pt11->setSizePolicy(sizePolicy3);
+        pt11->setMinimumSize(QSize(60, 0));
+        pt11->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlack.png")));
+        pt11->setScaledContents(true);
 
-        horizontalLayout_3->addWidget(graphicsView_11);
+        horizontalLayout_3->addWidget(pt11);
 
-        graphicsView_7 = new QGraphicsView(redOuterBoard);
-        graphicsView_7->setObjectName(QStringLiteral("graphicsView_7"));
-        sizePolicy3.setHeightForWidth(graphicsView_7->sizePolicy().hasHeightForWidth());
-        graphicsView_7->setSizePolicy(sizePolicy3);
-        graphicsView_7->setMinimumSize(QSize(60, 0));
+        pt10 = new QLabel(redOuterBoard);
+        pt10->setObjectName(QStringLiteral("pt10"));
+        sizePolicy3.setHeightForWidth(pt10->sizePolicy().hasHeightForWidth());
+        pt10->setSizePolicy(sizePolicy3);
+        pt10->setMinimumSize(QSize(60, 0));
+        pt10->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomWhite.png")));
+        pt10->setScaledContents(true);
 
-        horizontalLayout_3->addWidget(graphicsView_7);
+        horizontalLayout_3->addWidget(pt10);
 
-        graphicsView_12 = new QGraphicsView(redOuterBoard);
-        graphicsView_12->setObjectName(QStringLiteral("graphicsView_12"));
-        sizePolicy3.setHeightForWidth(graphicsView_12->sizePolicy().hasHeightForWidth());
-        graphicsView_12->setSizePolicy(sizePolicy3);
-        graphicsView_12->setMinimumSize(QSize(60, 0));
+        pt09 = new QLabel(redOuterBoard);
+        pt09->setObjectName(QStringLiteral("pt09"));
+        sizePolicy3.setHeightForWidth(pt09->sizePolicy().hasHeightForWidth());
+        pt09->setSizePolicy(sizePolicy3);
+        pt09->setMinimumSize(QSize(60, 0));
+        pt09->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlack.png")));
+        pt09->setScaledContents(true);
 
-        horizontalLayout_3->addWidget(graphicsView_12);
+        horizontalLayout_3->addWidget(pt09);
 
-        graphicsView_10 = new QGraphicsView(redOuterBoard);
-        graphicsView_10->setObjectName(QStringLiteral("graphicsView_10"));
-        sizePolicy3.setHeightForWidth(graphicsView_10->sizePolicy().hasHeightForWidth());
-        graphicsView_10->setSizePolicy(sizePolicy3);
-        graphicsView_10->setMinimumSize(QSize(60, 0));
+        pt08 = new QLabel(redOuterBoard);
+        pt08->setObjectName(QStringLiteral("pt08"));
+        sizePolicy3.setHeightForWidth(pt08->sizePolicy().hasHeightForWidth());
+        pt08->setSizePolicy(sizePolicy3);
+        pt08->setMinimumSize(QSize(60, 0));
+        pt08->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomWhite.png")));
+        pt08->setScaledContents(true);
 
-        horizontalLayout_3->addWidget(graphicsView_10);
+        horizontalLayout_3->addWidget(pt08);
 
-        graphicsView_8 = new QGraphicsView(redOuterBoard);
-        graphicsView_8->setObjectName(QStringLiteral("graphicsView_8"));
-        sizePolicy3.setHeightForWidth(graphicsView_8->sizePolicy().hasHeightForWidth());
-        graphicsView_8->setSizePolicy(sizePolicy3);
-        graphicsView_8->setMinimumSize(QSize(60, 0));
+        pt07 = new QLabel(redOuterBoard);
+        pt07->setObjectName(QStringLiteral("pt07"));
+        sizePolicy3.setHeightForWidth(pt07->sizePolicy().hasHeightForWidth());
+        pt07->setSizePolicy(sizePolicy3);
+        pt07->setMinimumSize(QSize(60, 0));
+        pt07->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlack.png")));
+        pt07->setScaledContents(true);
 
-        horizontalLayout_3->addWidget(graphicsView_8);
+        horizontalLayout_3->addWidget(pt07);
 
 
         verticalLayout->addWidget(redOuterBoard);
 
+        blackOuterBoard->raise();
+        redOuterBoard->raise();
+        leftBoardDivider->raise();
 
         horizontalLayout->addWidget(leftBoard);
 
         bar = new QWidget(centralwidget);
         bar->setObjectName(QStringLiteral("bar"));
-        QSizePolicy sizePolicy4(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
-        sizePolicy4.setHorizontalStretch(1);
-        sizePolicy4.setVerticalStretch(0);
-        sizePolicy4.setHeightForWidth(bar->sizePolicy().hasHeightForWidth());
-        bar->setSizePolicy(sizePolicy4);
+        QSizePolicy sizePolicy5(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
+        sizePolicy5.setHorizontalStretch(1);
+        sizePolicy5.setVerticalStretch(0);
+        sizePolicy5.setHeightForWidth(bar->sizePolicy().hasHeightForWidth());
+        bar->setSizePolicy(sizePolicy5);
         bar->setMinimumSize(QSize(60, 0));
         verticalLayout_3 = new QVBoxLayout(bar);
         verticalLayout_3->setSpacing(2);
@@ -248,29 +290,29 @@ public:
         verticalLayout_3->setContentsMargins(0, 0, 0, 0);
         redBar = new QWidget(bar);
         redBar->setObjectName(QStringLiteral("redBar"));
-        QSizePolicy sizePolicy5(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
-        sizePolicy5.setHorizontalStretch(0);
-        sizePolicy5.setVerticalStretch(10);
-        sizePolicy5.setHeightForWidth(redBar->sizePolicy().hasHeightForWidth());
-        redBar->setSizePolicy(sizePolicy5);
+        QSizePolicy sizePolicy6(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
+        sizePolicy6.setHorizontalStretch(0);
+        sizePolicy6.setVerticalStretch(10);
+        sizePolicy6.setHeightForWidth(redBar->sizePolicy().hasHeightForWidth());
+        redBar->setSizePolicy(sizePolicy6);
         redBar->setMinimumSize(QSize(60, 0));
 
         verticalLayout_3->addWidget(redBar);
 
         inititalCube = new QWidget(bar);
         inititalCube->setObjectName(QStringLiteral("inititalCube"));
-        QSizePolicy sizePolicy6(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy6.setHorizontalStretch(0);
-        sizePolicy6.setVerticalStretch(2);
-        sizePolicy6.setHeightForWidth(inititalCube->sizePolicy().hasHeightForWidth());
-        inititalCube->setSizePolicy(sizePolicy6);
+        QSizePolicy sizePolicy7(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy7.setHorizontalStretch(0);
+        sizePolicy7.setVerticalStretch(2);
+        sizePolicy7.setHeightForWidth(inititalCube->sizePolicy().hasHeightForWidth());
+        inititalCube->setSizePolicy(sizePolicy7);
 
         verticalLayout_3->addWidget(inititalCube);
 
         blackBar = new QWidget(bar);
         blackBar->setObjectName(QStringLiteral("blackBar"));
-        sizePolicy5.setHeightForWidth(blackBar->sizePolicy().hasHeightForWidth());
-        blackBar->setSizePolicy(sizePolicy5);
+        sizePolicy6.setHeightForWidth(blackBar->sizePolicy().hasHeightForWidth());
+        blackBar->setSizePolicy(sizePolicy6);
         blackBar->setMinimumSize(QSize(60, 0));
 
         verticalLayout_3->addWidget(blackBar);
@@ -284,119 +326,154 @@ public:
         rightBoard->setSizePolicy(sizePolicy1);
         rightBoard->setMinimumSize(QSize(360, 0));
         verticalLayout_2 = new QVBoxLayout(rightBoard);
-        verticalLayout_2->setSpacing(2);
+        verticalLayout_2->setSpacing(0);
         verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
-        verticalLayout_2->setContentsMargins(2, 2, 2, 2);
+        verticalLayout_2->setContentsMargins(0, 0, 0, 0);
         blackInnerBoard = new QWidget(rightBoard);
         blackInnerBoard->setObjectName(QStringLiteral("blackInnerBoard"));
         sizePolicy2.setHeightForWidth(blackInnerBoard->sizePolicy().hasHeightForWidth());
         blackInnerBoard->setSizePolicy(sizePolicy2);
         horizontalLayout_4 = new QHBoxLayout(blackInnerBoard);
+        horizontalLayout_4->setSpacing(2);
         horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
-        graphicsView_13 = new QGraphicsView(blackInnerBoard);
-        graphicsView_13->setObjectName(QStringLiteral("graphicsView_13"));
-        sizePolicy3.setHeightForWidth(graphicsView_13->sizePolicy().hasHeightForWidth());
-        graphicsView_13->setSizePolicy(sizePolicy3);
-        graphicsView_13->setMinimumSize(QSize(60, 0));
+        horizontalLayout_4->setContentsMargins(2, 2, 2, 2);
+        pt19 = new QLabel(blackInnerBoard);
+        pt19->setObjectName(QStringLiteral("pt19"));
+        sizePolicy3.setHeightForWidth(pt19->sizePolicy().hasHeightForWidth());
+        pt19->setSizePolicy(sizePolicy3);
+        pt19->setMinimumSize(QSize(60, 0));
+        pt19->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopBlack.png")));
+        pt19->setScaledContents(true);
 
-        horizontalLayout_4->addWidget(graphicsView_13);
+        horizontalLayout_4->addWidget(pt19);
 
-        graphicsView_14 = new QGraphicsView(blackInnerBoard);
-        graphicsView_14->setObjectName(QStringLiteral("graphicsView_14"));
-        sizePolicy3.setHeightForWidth(graphicsView_14->sizePolicy().hasHeightForWidth());
-        graphicsView_14->setSizePolicy(sizePolicy3);
-        graphicsView_14->setMinimumSize(QSize(60, 0));
+        pt20 = new QLabel(blackInnerBoard);
+        pt20->setObjectName(QStringLiteral("pt20"));
+        sizePolicy3.setHeightForWidth(pt20->sizePolicy().hasHeightForWidth());
+        pt20->setSizePolicy(sizePolicy3);
+        pt20->setMinimumSize(QSize(60, 0));
+        pt20->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopWhite.png")));
+        pt20->setScaledContents(true);
 
-        horizontalLayout_4->addWidget(graphicsView_14);
+        horizontalLayout_4->addWidget(pt20);
 
-        graphicsView_15 = new QGraphicsView(blackInnerBoard);
-        graphicsView_15->setObjectName(QStringLiteral("graphicsView_15"));
-        sizePolicy3.setHeightForWidth(graphicsView_15->sizePolicy().hasHeightForWidth());
-        graphicsView_15->setSizePolicy(sizePolicy3);
-        graphicsView_15->setMinimumSize(QSize(60, 0));
+        pt21 = new QLabel(blackInnerBoard);
+        pt21->setObjectName(QStringLiteral("pt21"));
+        sizePolicy3.setHeightForWidth(pt21->sizePolicy().hasHeightForWidth());
+        pt21->setSizePolicy(sizePolicy3);
+        pt21->setMinimumSize(QSize(60, 0));
+        pt21->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopBlack.png")));
+        pt21->setScaledContents(true);
 
-        horizontalLayout_4->addWidget(graphicsView_15);
+        horizontalLayout_4->addWidget(pt21);
 
-        graphicsView_16 = new QGraphicsView(blackInnerBoard);
-        graphicsView_16->setObjectName(QStringLiteral("graphicsView_16"));
-        sizePolicy3.setHeightForWidth(graphicsView_16->sizePolicy().hasHeightForWidth());
-        graphicsView_16->setSizePolicy(sizePolicy3);
-        graphicsView_16->setMinimumSize(QSize(60, 0));
+        pt22 = new QLabel(blackInnerBoard);
+        pt22->setObjectName(QStringLiteral("pt22"));
+        sizePolicy3.setHeightForWidth(pt22->sizePolicy().hasHeightForWidth());
+        pt22->setSizePolicy(sizePolicy3);
+        pt22->setMinimumSize(QSize(60, 0));
+        pt22->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopWhite.png")));
+        pt22->setScaledContents(true);
 
-        horizontalLayout_4->addWidget(graphicsView_16);
+        horizontalLayout_4->addWidget(pt22);
 
-        graphicsView_17 = new QGraphicsView(blackInnerBoard);
-        graphicsView_17->setObjectName(QStringLiteral("graphicsView_17"));
-        sizePolicy3.setHeightForWidth(graphicsView_17->sizePolicy().hasHeightForWidth());
-        graphicsView_17->setSizePolicy(sizePolicy3);
-        graphicsView_17->setMinimumSize(QSize(60, 0));
+        pt23 = new QLabel(blackInnerBoard);
+        pt23->setObjectName(QStringLiteral("pt23"));
+        sizePolicy3.setHeightForWidth(pt23->sizePolicy().hasHeightForWidth());
+        pt23->setSizePolicy(sizePolicy3);
+        pt23->setMinimumSize(QSize(60, 0));
+        pt23->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopBlack.png")));
+        pt23->setScaledContents(true);
 
-        horizontalLayout_4->addWidget(graphicsView_17);
+        horizontalLayout_4->addWidget(pt23);
 
-        graphicsView_18 = new QGraphicsView(blackInnerBoard);
-        graphicsView_18->setObjectName(QStringLiteral("graphicsView_18"));
-        sizePolicy3.setHeightForWidth(graphicsView_18->sizePolicy().hasHeightForWidth());
-        graphicsView_18->setSizePolicy(sizePolicy3);
-        graphicsView_18->setMinimumSize(QSize(60, 0));
+        pt24 = new QLabel(blackInnerBoard);
+        pt24->setObjectName(QStringLiteral("pt24"));
+        sizePolicy3.setHeightForWidth(pt24->sizePolicy().hasHeightForWidth());
+        pt24->setSizePolicy(sizePolicy3);
+        pt24->setMinimumSize(QSize(60, 0));
+        pt24->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopWhite.png")));
+        pt24->setScaledContents(true);
 
-        horizontalLayout_4->addWidget(graphicsView_18);
+        horizontalLayout_4->addWidget(pt24);
 
 
         verticalLayout_2->addWidget(blackInnerBoard);
+
+        rightBoardDivider = new QWidget(rightBoard);
+        rightBoardDivider->setObjectName(QStringLiteral("rightBoardDivider"));
+        sizePolicy4.setHeightForWidth(rightBoardDivider->sizePolicy().hasHeightForWidth());
+        rightBoardDivider->setSizePolicy(sizePolicy4);
+
+        verticalLayout_2->addWidget(rightBoardDivider);
 
         redInnerBoard = new QWidget(rightBoard);
         redInnerBoard->setObjectName(QStringLiteral("redInnerBoard"));
         sizePolicy2.setHeightForWidth(redInnerBoard->sizePolicy().hasHeightForWidth());
         redInnerBoard->setSizePolicy(sizePolicy2);
         horizontalLayout_5 = new QHBoxLayout(redInnerBoard);
+        horizontalLayout_5->setSpacing(2);
         horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
-        graphicsView_19 = new QGraphicsView(redInnerBoard);
-        graphicsView_19->setObjectName(QStringLiteral("graphicsView_19"));
-        sizePolicy3.setHeightForWidth(graphicsView_19->sizePolicy().hasHeightForWidth());
-        graphicsView_19->setSizePolicy(sizePolicy3);
-        graphicsView_19->setMinimumSize(QSize(60, 0));
+        horizontalLayout_5->setContentsMargins(2, 2, 2, 2);
+        pt06 = new QLabel(redInnerBoard);
+        pt06->setObjectName(QStringLiteral("pt06"));
+        sizePolicy3.setHeightForWidth(pt06->sizePolicy().hasHeightForWidth());
+        pt06->setSizePolicy(sizePolicy3);
+        pt06->setMinimumSize(QSize(60, 0));
+        pt06->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomWhite.png")));
+        pt06->setScaledContents(true);
 
-        horizontalLayout_5->addWidget(graphicsView_19);
+        horizontalLayout_5->addWidget(pt06);
 
-        graphicsView_20 = new QGraphicsView(redInnerBoard);
-        graphicsView_20->setObjectName(QStringLiteral("graphicsView_20"));
-        sizePolicy3.setHeightForWidth(graphicsView_20->sizePolicy().hasHeightForWidth());
-        graphicsView_20->setSizePolicy(sizePolicy3);
-        graphicsView_20->setMinimumSize(QSize(60, 0));
+        pt05 = new QLabel(redInnerBoard);
+        pt05->setObjectName(QStringLiteral("pt05"));
+        sizePolicy3.setHeightForWidth(pt05->sizePolicy().hasHeightForWidth());
+        pt05->setSizePolicy(sizePolicy3);
+        pt05->setMinimumSize(QSize(60, 0));
+        pt05->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlack.png")));
+        pt05->setScaledContents(true);
 
-        horizontalLayout_5->addWidget(graphicsView_20);
+        horizontalLayout_5->addWidget(pt05);
 
-        graphicsView_21 = new QGraphicsView(redInnerBoard);
-        graphicsView_21->setObjectName(QStringLiteral("graphicsView_21"));
-        sizePolicy3.setHeightForWidth(graphicsView_21->sizePolicy().hasHeightForWidth());
-        graphicsView_21->setSizePolicy(sizePolicy3);
-        graphicsView_21->setMinimumSize(QSize(60, 0));
+        pt04 = new QLabel(redInnerBoard);
+        pt04->setObjectName(QStringLiteral("pt04"));
+        sizePolicy3.setHeightForWidth(pt04->sizePolicy().hasHeightForWidth());
+        pt04->setSizePolicy(sizePolicy3);
+        pt04->setMinimumSize(QSize(60, 0));
+        pt04->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomWhite.png")));
+        pt04->setScaledContents(true);
 
-        horizontalLayout_5->addWidget(graphicsView_21);
+        horizontalLayout_5->addWidget(pt04);
 
-        graphicsView_22 = new QGraphicsView(redInnerBoard);
-        graphicsView_22->setObjectName(QStringLiteral("graphicsView_22"));
-        sizePolicy3.setHeightForWidth(graphicsView_22->sizePolicy().hasHeightForWidth());
-        graphicsView_22->setSizePolicy(sizePolicy3);
-        graphicsView_22->setMinimumSize(QSize(60, 0));
+        pt02 = new QLabel(redInnerBoard);
+        pt02->setObjectName(QStringLiteral("pt02"));
+        sizePolicy3.setHeightForWidth(pt02->sizePolicy().hasHeightForWidth());
+        pt02->setSizePolicy(sizePolicy3);
+        pt02->setMinimumSize(QSize(60, 0));
+        pt02->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlack.png")));
+        pt02->setScaledContents(true);
 
-        horizontalLayout_5->addWidget(graphicsView_22);
+        horizontalLayout_5->addWidget(pt02);
 
-        graphicsView_23 = new QGraphicsView(redInnerBoard);
-        graphicsView_23->setObjectName(QStringLiteral("graphicsView_23"));
-        sizePolicy3.setHeightForWidth(graphicsView_23->sizePolicy().hasHeightForWidth());
-        graphicsView_23->setSizePolicy(sizePolicy3);
-        graphicsView_23->setMinimumSize(QSize(60, 0));
+        pt01 = new QLabel(redInnerBoard);
+        pt01->setObjectName(QStringLiteral("pt01"));
+        sizePolicy3.setHeightForWidth(pt01->sizePolicy().hasHeightForWidth());
+        pt01->setSizePolicy(sizePolicy3);
+        pt01->setMinimumSize(QSize(60, 0));
+        pt01->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomWhite.png")));
+        pt01->setScaledContents(true);
 
-        horizontalLayout_5->addWidget(graphicsView_23);
+        horizontalLayout_5->addWidget(pt01);
 
-        graphicsView_24 = new QGraphicsView(redInnerBoard);
-        graphicsView_24->setObjectName(QStringLiteral("graphicsView_24"));
-        sizePolicy3.setHeightForWidth(graphicsView_24->sizePolicy().hasHeightForWidth());
-        graphicsView_24->setSizePolicy(sizePolicy3);
-        graphicsView_24->setMinimumSize(QSize(60, 0));
+        pt03 = new QLabel(redInnerBoard);
+        pt03->setObjectName(QStringLiteral("pt03"));
+        sizePolicy3.setHeightForWidth(pt03->sizePolicy().hasHeightForWidth());
+        pt03->setSizePolicy(sizePolicy3);
+        pt03->setMinimumSize(QSize(60, 0));
+        pt03->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlack.png")));
+        pt03->setScaledContents(true);
 
-        horizontalLayout_5->addWidget(graphicsView_24);
+        horizontalLayout_5->addWidget(pt03);
 
 
         verticalLayout_2->addWidget(redInnerBoard);
@@ -406,45 +483,45 @@ public:
 
         off = new QWidget(centralwidget);
         off->setObjectName(QStringLiteral("off"));
-        QSizePolicy sizePolicy7(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy7.setHorizontalStretch(1);
-        sizePolicy7.setVerticalStretch(0);
-        sizePolicy7.setHeightForWidth(off->sizePolicy().hasHeightForWidth());
-        off->setSizePolicy(sizePolicy7);
+        QSizePolicy sizePolicy8(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy8.setHorizontalStretch(1);
+        sizePolicy8.setVerticalStretch(0);
+        sizePolicy8.setHeightForWidth(off->sizePolicy().hasHeightForWidth());
+        off->setSizePolicy(sizePolicy8);
         verticalLayout_4 = new QVBoxLayout(off);
-        verticalLayout_4->setSpacing(2);
+        verticalLayout_4->setSpacing(4);
         verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
         verticalLayout_4->setContentsMargins(0, 0, 0, 0);
-        widget = new QWidget(off);
-        widget->setObjectName(QStringLiteral("widget"));
-        sizePolicy6.setHeightForWidth(widget->sizePolicy().hasHeightForWidth());
-        widget->setSizePolicy(sizePolicy6);
+        blackCube = new QWidget(off);
+        blackCube->setObjectName(QStringLiteral("blackCube"));
+        sizePolicy7.setHeightForWidth(blackCube->sizePolicy().hasHeightForWidth());
+        blackCube->setSizePolicy(sizePolicy7);
 
-        verticalLayout_4->addWidget(widget);
+        verticalLayout_4->addWidget(blackCube);
 
-        widget_2 = new QWidget(off);
-        widget_2->setObjectName(QStringLiteral("widget_2"));
-        QSizePolicy sizePolicy8(QSizePolicy::Preferred, QSizePolicy::Preferred);
-        sizePolicy8.setHorizontalStretch(0);
-        sizePolicy8.setVerticalStretch(9);
-        sizePolicy8.setHeightForWidth(widget_2->sizePolicy().hasHeightForWidth());
-        widget_2->setSizePolicy(sizePolicy8);
+        blackOff = new QWidget(off);
+        blackOff->setObjectName(QStringLiteral("blackOff"));
+        QSizePolicy sizePolicy9(QSizePolicy::Preferred, QSizePolicy::Preferred);
+        sizePolicy9.setHorizontalStretch(0);
+        sizePolicy9.setVerticalStretch(9);
+        sizePolicy9.setHeightForWidth(blackOff->sizePolicy().hasHeightForWidth());
+        blackOff->setSizePolicy(sizePolicy9);
 
-        verticalLayout_4->addWidget(widget_2);
+        verticalLayout_4->addWidget(blackOff);
 
-        widget_3 = new QWidget(off);
-        widget_3->setObjectName(QStringLiteral("widget_3"));
-        sizePolicy8.setHeightForWidth(widget_3->sizePolicy().hasHeightForWidth());
-        widget_3->setSizePolicy(sizePolicy8);
+        redOff = new QWidget(off);
+        redOff->setObjectName(QStringLiteral("redOff"));
+        sizePolicy9.setHeightForWidth(redOff->sizePolicy().hasHeightForWidth());
+        redOff->setSizePolicy(sizePolicy9);
 
-        verticalLayout_4->addWidget(widget_3);
+        verticalLayout_4->addWidget(redOff);
 
-        widget_4 = new QWidget(off);
-        widget_4->setObjectName(QStringLiteral("widget_4"));
-        sizePolicy6.setHeightForWidth(widget_4->sizePolicy().hasHeightForWidth());
-        widget_4->setSizePolicy(sizePolicy6);
+        redCube = new QWidget(off);
+        redCube->setObjectName(QStringLiteral("redCube"));
+        sizePolicy7.setHeightForWidth(redCube->sizePolicy().hasHeightForWidth());
+        redCube->setSizePolicy(sizePolicy7);
 
-        verticalLayout_4->addWidget(widget_4);
+        verticalLayout_4->addWidget(redCube);
 
 
         horizontalLayout->addWidget(off);
@@ -468,6 +545,7 @@ public:
         menuOptions->addSeparator();
 
         retranslateUi(Game);
+        QObject::connect(menubar, SIGNAL(triggered(QAction*)), Game, SLOT(close()));
 
         QMetaObject::connectSlotsByName(Game);
     } // setupUi
@@ -475,6 +553,30 @@ public:
     void retranslateUi(QMainWindow *Game)
     {
         Game->setWindowTitle(QApplication::translate("Game", "Game", Q_NULLPTR));
+        pt13->setText(QString());
+        pt14->setText(QString());
+        pt15->setText(QString());
+        pt16->setText(QString());
+        pt17->setText(QString());
+        pt18->setText(QString());
+        pt12->setText(QString());
+        pt11->setText(QString());
+        pt10->setText(QString());
+        pt09->setText(QString());
+        pt08->setText(QString());
+        pt07->setText(QString());
+        pt19->setText(QString());
+        pt20->setText(QString());
+        pt21->setText(QString());
+        pt22->setText(QString());
+        pt23->setText(QString());
+        pt24->setText(QString());
+        pt06->setText(QString());
+        pt05->setText(QString());
+        pt04->setText(QString());
+        pt02->setText(QString());
+        pt01->setText(QString());
+        pt03->setText(QString());
         menuBoard->setTitle(QApplication::translate("Game", "Board", Q_NULLPTR));
         menuOptions->setTitle(QApplication::translate("Game", "Options", Q_NULLPTR));
     } // retranslateUi
