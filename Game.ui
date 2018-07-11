@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1057</width>
-    <height>768</height>
+    <height>792</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -15,6 +15,9 @@
     <horstretch>1</horstretch>
     <verstretch>13</verstretch>
    </sizepolicy>
+  </property>
+  <property name="mouseTracking">
+   <bool>true</bool>
   </property>
   <property name="windowTitle">
    <string>Game</string>
@@ -91,7 +94,7 @@
            <number>2</number>
           </property>
           <item>
-           <widget class="QLabel" name="pt13">
+           <widget class="Point" name="pt13">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -116,7 +119,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt14">
+           <widget class="Point" name="pt14">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -141,7 +144,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt15">
+           <widget class="Point" name="pt15">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -166,7 +169,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt16">
+           <widget class="Point" name="pt16">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -191,7 +194,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt17">
+           <widget class="Point" name="pt17">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -216,7 +219,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt18">
+           <widget class="Point" name="pt18">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -278,7 +281,7 @@
            <number>2</number>
           </property>
           <item>
-           <widget class="QLabel" name="pt12">
+           <widget class="Point" name="pt12">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -303,7 +306,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt11">
+           <widget class="Point" name="pt11">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -328,7 +331,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt10">
+           <widget class="Point" name="pt10">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -353,7 +356,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt09">
+           <widget class="Point" name="pt09">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -378,7 +381,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt08">
+           <widget class="Point" name="pt08">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -403,7 +406,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt07">
+           <widget class="Point" name="pt07">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -490,6 +493,28 @@
            <verstretch>2</verstretch>
           </sizepolicy>
          </property>
+         <widget class="QPushButton" name="pushButton">
+          <property name="geometry">
+           <rect>
+            <x>10</x>
+            <y>20</y>
+            <width>51</width>
+            <height>28</height>
+           </rect>
+          </property>
+          <property name="text">
+           <string>Push Me</string>
+          </property>
+          <property name="checkable">
+           <bool>false</bool>
+          </property>
+          <property name="autoDefault">
+           <bool>false</bool>
+          </property>
+          <property name="default">
+           <bool>true</bool>
+          </property>
+         </widget>
         </widget>
        </item>
        <item>
@@ -566,7 +591,7 @@
            <number>2</number>
           </property>
           <item>
-           <widget class="QLabel" name="pt19">
+           <widget class="Point" name="pt19">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -591,7 +616,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt20">
+           <widget class="Point" name="pt20">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -616,7 +641,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt21">
+           <widget class="Point" name="pt21">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -641,7 +666,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt22">
+           <widget class="Point" name="pt22">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -666,7 +691,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt23">
+           <widget class="Point" name="pt23">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -691,7 +716,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt24">
+           <widget class="Point" name="pt24">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -753,7 +778,7 @@
            <number>2</number>
           </property>
           <item>
-           <widget class="QLabel" name="pt06">
+           <widget class="Point" name="pt06">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -778,7 +803,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt05">
+           <widget class="Point" name="pt05">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -803,7 +828,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt04">
+           <widget class="Point" name="pt04">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -828,7 +853,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt02">
+           <widget class="Point" name="pt03">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -853,7 +878,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt01">
+           <widget class="Point" name="pt02">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -878,7 +903,7 @@
            </widget>
           </item>
           <item>
-           <widget class="QLabel" name="pt03">
+           <widget class="Point" name="pt01">
             <property name="sizePolicy">
              <sizepolicy hsizetype="Preferred" vsizetype="Ignored">
               <horstretch>1</horstretch>
@@ -943,16 +968,6 @@
         </widget>
        </item>
        <item>
-        <widget class="QWidget" name="blackOff" native="true">
-         <property name="sizePolicy">
-          <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
-           <horstretch>0</horstretch>
-           <verstretch>9</verstretch>
-          </sizepolicy>
-         </property>
-        </widget>
-       </item>
-       <item>
         <widget class="QWidget" name="redOff" native="true">
          <property name="sizePolicy">
           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
@@ -960,6 +975,22 @@
            <verstretch>9</verstretch>
           </sizepolicy>
          </property>
+         <widget class="QWidget" name="blackOff" native="true">
+          <property name="geometry">
+           <rect>
+            <x>-10</x>
+            <y>-50</y>
+            <width>75</width>
+            <height>297</height>
+           </rect>
+          </property>
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+            <horstretch>0</horstretch>
+            <verstretch>9</verstretch>
+           </sizepolicy>
+          </property>
+         </widget>
         </widget>
        </item>
        <item>
@@ -1003,25 +1034,15 @@
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Point</class>
+   <extends>QLabel</extends>
+   <header location="global">Point.h</header>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="images.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>menubar</sender>
-   <signal>triggered(QAction*)</signal>
-   <receiver>Game</receiver>
-   <slot>close()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>528</x>
-     <y>12</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>528</x>
-     <y>383</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>

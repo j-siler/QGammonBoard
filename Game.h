@@ -21,6 +21,7 @@ class Game : public QMainWindow {
 public:
     Game();
     virtual ~Game();
+    void mousePressEvent(QMouseEvent *event);
 private:
     Ui::Game widget;
 };

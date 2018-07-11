@@ -5,6 +5,7 @@
                    displayName="Header Files"
                    projectFiles="true">
       <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Game.h</itemPath>
+      <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Point.h</itemPath>
     </logicalFolder>
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
@@ -16,6 +17,7 @@
                    displayName="Source Files"
                    projectFiles="true">
       <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Game.cpp</itemPath>
+      <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Point.cpp</itemPath>
       <itemPath>main.cpp</itemPath>
     </logicalFolder>
     <logicalFolder name="TestFiles"
@@ -54,6 +56,16 @@
             flavor2="0">
       </item>
       <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Game.ui"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Point.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Point.h"
             ex="false"
             tool="3"
             flavor2="0">
@@ -101,6 +113,16 @@
             flavor2="0">
       </item>
       <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Game.ui"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Point.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Point.h"
             ex="false"
             tool="3"
             flavor2="0">

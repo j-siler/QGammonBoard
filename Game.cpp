@@ -11,7 +11,10 @@
  * Created on July 6, 2018, 7:43 PM
  */
 
+#include <QDebug>
+
 #include "Game.h"
+#include "Point.h"
 Game::Game() {
   widget.setupUi(this);
   centralWidget()->setStyleSheet("background-color:darkred;");
@@ -28,7 +31,18 @@ Game::Game() {
   widget.redCube->setStyleSheet("background-color:darkgreen;");
   widget.blackOff->setStyleSheet("background-color:darkgreen;");
   widget.redOff->setStyleSheet("background-color:darkgreen;");
+  QObject::connect(widget.pushButton, SIGNAL(pressed()), widget.pt01, SLOT(handleButtonPress()));
+  QObject::connect(widget.pushButton, SIGNAL(released()), widget.pt01, SLOT(handleButtonRelease()));
+
 }
 
 Game::~Game() {
+}
+
+void Game::mousePressEvent(QMouseEvent* event){
+  qDebug()<<"MousePressEvent x="<<1;
+//          <<event->x()
+//          <<", y="
+//          <<event->y();
+  
 }

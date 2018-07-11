@@ -9,16 +9,17 @@
 #ifndef UI_GAME_H
 #define UI_GAME_H
 
+#include <Point.h>
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QButtonGroup>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
-#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenu>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
@@ -34,50 +35,51 @@ public:
     QVBoxLayout *verticalLayout;
     QWidget *blackOuterBoard;
     QHBoxLayout *horizontalLayout_2;
-    QLabel *pt13;
-    QLabel *pt14;
-    QLabel *pt15;
-    QLabel *pt16;
-    QLabel *pt17;
-    QLabel *pt18;
+    Point *pt13;
+    Point *pt14;
+    Point *pt15;
+    Point *pt16;
+    Point *pt17;
+    Point *pt18;
     QWidget *leftBoardDivider;
     QWidget *redOuterBoard;
     QHBoxLayout *horizontalLayout_3;
-    QLabel *pt12;
-    QLabel *pt11;
-    QLabel *pt10;
-    QLabel *pt09;
-    QLabel *pt08;
-    QLabel *pt07;
+    Point *pt12;
+    Point *pt11;
+    Point *pt10;
+    Point *pt09;
+    Point *pt08;
+    Point *pt07;
     QWidget *bar;
     QVBoxLayout *verticalLayout_3;
     QWidget *redBar;
     QWidget *inititalCube;
+    QPushButton *pushButton;
     QWidget *blackBar;
     QWidget *rightBoard;
     QVBoxLayout *verticalLayout_2;
     QWidget *blackInnerBoard;
     QHBoxLayout *horizontalLayout_4;
-    QLabel *pt19;
-    QLabel *pt20;
-    QLabel *pt21;
-    QLabel *pt22;
-    QLabel *pt23;
-    QLabel *pt24;
+    Point *pt19;
+    Point *pt20;
+    Point *pt21;
+    Point *pt22;
+    Point *pt23;
+    Point *pt24;
     QWidget *rightBoardDivider;
     QWidget *redInnerBoard;
     QHBoxLayout *horizontalLayout_5;
-    QLabel *pt06;
-    QLabel *pt05;
-    QLabel *pt04;
-    QLabel *pt02;
-    QLabel *pt01;
-    QLabel *pt03;
+    Point *pt06;
+    Point *pt05;
+    Point *pt04;
+    Point *pt03;
+    Point *pt02;
+    Point *pt01;
     QWidget *off;
     QVBoxLayout *verticalLayout_4;
     QWidget *blackCube;
-    QWidget *blackOff;
     QWidget *redOff;
+    QWidget *blackOff;
     QWidget *redCube;
     QMenuBar *menubar;
     QMenu *menuBoard;
@@ -88,12 +90,13 @@ public:
     {
         if (Game->objectName().isEmpty())
             Game->setObjectName(QStringLiteral("Game"));
-        Game->resize(1057, 768);
+        Game->resize(1057, 792);
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(1);
         sizePolicy.setVerticalStretch(13);
         sizePolicy.setHeightForWidth(Game->sizePolicy().hasHeightForWidth());
         Game->setSizePolicy(sizePolicy);
+        Game->setMouseTracking(true);
         centralwidget = new QWidget(Game);
         centralwidget->setObjectName(QStringLiteral("centralwidget"));
         horizontalLayout = new QHBoxLayout(centralwidget);
@@ -123,7 +126,7 @@ public:
         horizontalLayout_2->setSpacing(2);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(2, 2, 2, 2);
-        pt13 = new QLabel(blackOuterBoard);
+        pt13 = new Point(blackOuterBoard);
         pt13->setObjectName(QStringLiteral("pt13"));
         QSizePolicy sizePolicy3(QSizePolicy::Preferred, QSizePolicy::Ignored);
         sizePolicy3.setHorizontalStretch(1);
@@ -136,7 +139,7 @@ public:
 
         horizontalLayout_2->addWidget(pt13);
 
-        pt14 = new QLabel(blackOuterBoard);
+        pt14 = new Point(blackOuterBoard);
         pt14->setObjectName(QStringLiteral("pt14"));
         sizePolicy3.setHeightForWidth(pt14->sizePolicy().hasHeightForWidth());
         pt14->setSizePolicy(sizePolicy3);
@@ -146,7 +149,7 @@ public:
 
         horizontalLayout_2->addWidget(pt14);
 
-        pt15 = new QLabel(blackOuterBoard);
+        pt15 = new Point(blackOuterBoard);
         pt15->setObjectName(QStringLiteral("pt15"));
         sizePolicy3.setHeightForWidth(pt15->sizePolicy().hasHeightForWidth());
         pt15->setSizePolicy(sizePolicy3);
@@ -156,7 +159,7 @@ public:
 
         horizontalLayout_2->addWidget(pt15);
 
-        pt16 = new QLabel(blackOuterBoard);
+        pt16 = new Point(blackOuterBoard);
         pt16->setObjectName(QStringLiteral("pt16"));
         sizePolicy3.setHeightForWidth(pt16->sizePolicy().hasHeightForWidth());
         pt16->setSizePolicy(sizePolicy3);
@@ -166,7 +169,7 @@ public:
 
         horizontalLayout_2->addWidget(pt16);
 
-        pt17 = new QLabel(blackOuterBoard);
+        pt17 = new Point(blackOuterBoard);
         pt17->setObjectName(QStringLiteral("pt17"));
         sizePolicy3.setHeightForWidth(pt17->sizePolicy().hasHeightForWidth());
         pt17->setSizePolicy(sizePolicy3);
@@ -176,7 +179,7 @@ public:
 
         horizontalLayout_2->addWidget(pt17);
 
-        pt18 = new QLabel(blackOuterBoard);
+        pt18 = new Point(blackOuterBoard);
         pt18->setObjectName(QStringLiteral("pt18"));
         sizePolicy3.setHeightForWidth(pt18->sizePolicy().hasHeightForWidth());
         pt18->setSizePolicy(sizePolicy3);
@@ -207,7 +210,7 @@ public:
         horizontalLayout_3->setSpacing(2);
         horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
         horizontalLayout_3->setContentsMargins(2, 2, 2, 2);
-        pt12 = new QLabel(redOuterBoard);
+        pt12 = new Point(redOuterBoard);
         pt12->setObjectName(QStringLiteral("pt12"));
         sizePolicy3.setHeightForWidth(pt12->sizePolicy().hasHeightForWidth());
         pt12->setSizePolicy(sizePolicy3);
@@ -217,7 +220,7 @@ public:
 
         horizontalLayout_3->addWidget(pt12);
 
-        pt11 = new QLabel(redOuterBoard);
+        pt11 = new Point(redOuterBoard);
         pt11->setObjectName(QStringLiteral("pt11"));
         sizePolicy3.setHeightForWidth(pt11->sizePolicy().hasHeightForWidth());
         pt11->setSizePolicy(sizePolicy3);
@@ -227,7 +230,7 @@ public:
 
         horizontalLayout_3->addWidget(pt11);
 
-        pt10 = new QLabel(redOuterBoard);
+        pt10 = new Point(redOuterBoard);
         pt10->setObjectName(QStringLiteral("pt10"));
         sizePolicy3.setHeightForWidth(pt10->sizePolicy().hasHeightForWidth());
         pt10->setSizePolicy(sizePolicy3);
@@ -237,7 +240,7 @@ public:
 
         horizontalLayout_3->addWidget(pt10);
 
-        pt09 = new QLabel(redOuterBoard);
+        pt09 = new Point(redOuterBoard);
         pt09->setObjectName(QStringLiteral("pt09"));
         sizePolicy3.setHeightForWidth(pt09->sizePolicy().hasHeightForWidth());
         pt09->setSizePolicy(sizePolicy3);
@@ -247,7 +250,7 @@ public:
 
         horizontalLayout_3->addWidget(pt09);
 
-        pt08 = new QLabel(redOuterBoard);
+        pt08 = new Point(redOuterBoard);
         pt08->setObjectName(QStringLiteral("pt08"));
         sizePolicy3.setHeightForWidth(pt08->sizePolicy().hasHeightForWidth());
         pt08->setSizePolicy(sizePolicy3);
@@ -257,7 +260,7 @@ public:
 
         horizontalLayout_3->addWidget(pt08);
 
-        pt07 = new QLabel(redOuterBoard);
+        pt07 = new Point(redOuterBoard);
         pt07->setObjectName(QStringLiteral("pt07"));
         sizePolicy3.setHeightForWidth(pt07->sizePolicy().hasHeightForWidth());
         pt07->setSizePolicy(sizePolicy3);
@@ -306,6 +309,11 @@ public:
         sizePolicy7.setVerticalStretch(2);
         sizePolicy7.setHeightForWidth(inititalCube->sizePolicy().hasHeightForWidth());
         inititalCube->setSizePolicy(sizePolicy7);
+        pushButton = new QPushButton(inititalCube);
+        pushButton->setObjectName(QStringLiteral("pushButton"));
+        pushButton->setGeometry(QRect(10, 20, 51, 28));
+        pushButton->setCheckable(false);
+        pushButton->setAutoDefault(false);
 
         verticalLayout_3->addWidget(inititalCube);
 
@@ -337,7 +345,7 @@ public:
         horizontalLayout_4->setSpacing(2);
         horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
         horizontalLayout_4->setContentsMargins(2, 2, 2, 2);
-        pt19 = new QLabel(blackInnerBoard);
+        pt19 = new Point(blackInnerBoard);
         pt19->setObjectName(QStringLiteral("pt19"));
         sizePolicy3.setHeightForWidth(pt19->sizePolicy().hasHeightForWidth());
         pt19->setSizePolicy(sizePolicy3);
@@ -347,7 +355,7 @@ public:
 
         horizontalLayout_4->addWidget(pt19);
 
-        pt20 = new QLabel(blackInnerBoard);
+        pt20 = new Point(blackInnerBoard);
         pt20->setObjectName(QStringLiteral("pt20"));
         sizePolicy3.setHeightForWidth(pt20->sizePolicy().hasHeightForWidth());
         pt20->setSizePolicy(sizePolicy3);
@@ -357,7 +365,7 @@ public:
 
         horizontalLayout_4->addWidget(pt20);
 
-        pt21 = new QLabel(blackInnerBoard);
+        pt21 = new Point(blackInnerBoard);
         pt21->setObjectName(QStringLiteral("pt21"));
         sizePolicy3.setHeightForWidth(pt21->sizePolicy().hasHeightForWidth());
         pt21->setSizePolicy(sizePolicy3);
@@ -367,7 +375,7 @@ public:
 
         horizontalLayout_4->addWidget(pt21);
 
-        pt22 = new QLabel(blackInnerBoard);
+        pt22 = new Point(blackInnerBoard);
         pt22->setObjectName(QStringLiteral("pt22"));
         sizePolicy3.setHeightForWidth(pt22->sizePolicy().hasHeightForWidth());
         pt22->setSizePolicy(sizePolicy3);
@@ -377,7 +385,7 @@ public:
 
         horizontalLayout_4->addWidget(pt22);
 
-        pt23 = new QLabel(blackInnerBoard);
+        pt23 = new Point(blackInnerBoard);
         pt23->setObjectName(QStringLiteral("pt23"));
         sizePolicy3.setHeightForWidth(pt23->sizePolicy().hasHeightForWidth());
         pt23->setSizePolicy(sizePolicy3);
@@ -387,7 +395,7 @@ public:
 
         horizontalLayout_4->addWidget(pt23);
 
-        pt24 = new QLabel(blackInnerBoard);
+        pt24 = new Point(blackInnerBoard);
         pt24->setObjectName(QStringLiteral("pt24"));
         sizePolicy3.setHeightForWidth(pt24->sizePolicy().hasHeightForWidth());
         pt24->setSizePolicy(sizePolicy3);
@@ -415,7 +423,7 @@ public:
         horizontalLayout_5->setSpacing(2);
         horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
         horizontalLayout_5->setContentsMargins(2, 2, 2, 2);
-        pt06 = new QLabel(redInnerBoard);
+        pt06 = new Point(redInnerBoard);
         pt06->setObjectName(QStringLiteral("pt06"));
         sizePolicy3.setHeightForWidth(pt06->sizePolicy().hasHeightForWidth());
         pt06->setSizePolicy(sizePolicy3);
@@ -425,7 +433,7 @@ public:
 
         horizontalLayout_5->addWidget(pt06);
 
-        pt05 = new QLabel(redInnerBoard);
+        pt05 = new Point(redInnerBoard);
         pt05->setObjectName(QStringLiteral("pt05"));
         sizePolicy3.setHeightForWidth(pt05->sizePolicy().hasHeightForWidth());
         pt05->setSizePolicy(sizePolicy3);
@@ -435,7 +443,7 @@ public:
 
         horizontalLayout_5->addWidget(pt05);
 
-        pt04 = new QLabel(redInnerBoard);
+        pt04 = new Point(redInnerBoard);
         pt04->setObjectName(QStringLiteral("pt04"));
         sizePolicy3.setHeightForWidth(pt04->sizePolicy().hasHeightForWidth());
         pt04->setSizePolicy(sizePolicy3);
@@ -445,27 +453,7 @@ public:
 
         horizontalLayout_5->addWidget(pt04);
 
-        pt02 = new QLabel(redInnerBoard);
-        pt02->setObjectName(QStringLiteral("pt02"));
-        sizePolicy3.setHeightForWidth(pt02->sizePolicy().hasHeightForWidth());
-        pt02->setSizePolicy(sizePolicy3);
-        pt02->setMinimumSize(QSize(60, 0));
-        pt02->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlack.png")));
-        pt02->setScaledContents(true);
-
-        horizontalLayout_5->addWidget(pt02);
-
-        pt01 = new QLabel(redInnerBoard);
-        pt01->setObjectName(QStringLiteral("pt01"));
-        sizePolicy3.setHeightForWidth(pt01->sizePolicy().hasHeightForWidth());
-        pt01->setSizePolicy(sizePolicy3);
-        pt01->setMinimumSize(QSize(60, 0));
-        pt01->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomWhite.png")));
-        pt01->setScaledContents(true);
-
-        horizontalLayout_5->addWidget(pt01);
-
-        pt03 = new QLabel(redInnerBoard);
+        pt03 = new Point(redInnerBoard);
         pt03->setObjectName(QStringLiteral("pt03"));
         sizePolicy3.setHeightForWidth(pt03->sizePolicy().hasHeightForWidth());
         pt03->setSizePolicy(sizePolicy3);
@@ -474,6 +462,26 @@ public:
         pt03->setScaledContents(true);
 
         horizontalLayout_5->addWidget(pt03);
+
+        pt02 = new Point(redInnerBoard);
+        pt02->setObjectName(QStringLiteral("pt02"));
+        sizePolicy3.setHeightForWidth(pt02->sizePolicy().hasHeightForWidth());
+        pt02->setSizePolicy(sizePolicy3);
+        pt02->setMinimumSize(QSize(60, 0));
+        pt02->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomWhite.png")));
+        pt02->setScaledContents(true);
+
+        horizontalLayout_5->addWidget(pt02);
+
+        pt01 = new Point(redInnerBoard);
+        pt01->setObjectName(QStringLiteral("pt01"));
+        sizePolicy3.setHeightForWidth(pt01->sizePolicy().hasHeightForWidth());
+        pt01->setSizePolicy(sizePolicy3);
+        pt01->setMinimumSize(QSize(60, 0));
+        pt01->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlack.png")));
+        pt01->setScaledContents(true);
+
+        horizontalLayout_5->addWidget(pt01);
 
 
         verticalLayout_2->addWidget(redInnerBoard);
@@ -499,20 +507,18 @@ public:
 
         verticalLayout_4->addWidget(blackCube);
 
-        blackOff = new QWidget(off);
-        blackOff->setObjectName(QStringLiteral("blackOff"));
+        redOff = new QWidget(off);
+        redOff->setObjectName(QStringLiteral("redOff"));
         QSizePolicy sizePolicy9(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy9.setHorizontalStretch(0);
         sizePolicy9.setVerticalStretch(9);
-        sizePolicy9.setHeightForWidth(blackOff->sizePolicy().hasHeightForWidth());
-        blackOff->setSizePolicy(sizePolicy9);
-
-        verticalLayout_4->addWidget(blackOff);
-
-        redOff = new QWidget(off);
-        redOff->setObjectName(QStringLiteral("redOff"));
         sizePolicy9.setHeightForWidth(redOff->sizePolicy().hasHeightForWidth());
         redOff->setSizePolicy(sizePolicy9);
+        blackOff = new QWidget(redOff);
+        blackOff->setObjectName(QStringLiteral("blackOff"));
+        blackOff->setGeometry(QRect(-10, -50, 75, 297));
+        sizePolicy9.setHeightForWidth(blackOff->sizePolicy().hasHeightForWidth());
+        blackOff->setSizePolicy(sizePolicy9);
 
         verticalLayout_4->addWidget(redOff);
 
@@ -545,7 +551,9 @@ public:
         menuOptions->addSeparator();
 
         retranslateUi(Game);
-        QObject::connect(menubar, SIGNAL(triggered(QAction*)), Game, SLOT(close()));
+
+        pushButton->setDefault(true);
+
 
         QMetaObject::connectSlotsByName(Game);
     } // setupUi
@@ -565,6 +573,7 @@ public:
         pt09->setText(QString());
         pt08->setText(QString());
         pt07->setText(QString());
+        pushButton->setText(QApplication::translate("Game", "Push Me", Q_NULLPTR));
         pt19->setText(QString());
         pt20->setText(QString());
         pt21->setText(QString());
@@ -574,9 +583,9 @@ public:
         pt06->setText(QString());
         pt05->setText(QString());
         pt04->setText(QString());
+        pt03->setText(QString());
         pt02->setText(QString());
         pt01->setText(QString());
-        pt03->setText(QString());
         menuBoard->setTitle(QApplication::translate("Game", "Board", Q_NULLPTR));
         menuOptions->setTitle(QApplication::translate("Game", "Options", Q_NULLPTR));
     } // retranslateUi
