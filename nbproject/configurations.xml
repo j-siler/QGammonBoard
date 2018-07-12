@@ -10,6 +10,33 @@
     <logicalFolder name="ResourceFiles"
                    displayName="Resource Files"
                    projectFiles="true">
+      <logicalFolder name="Images" displayName="Images" projectFiles="true">
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB1B.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB2B.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB3B.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB4B.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB5B.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT1W.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT2W.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT3W.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT4W.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT5B.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT5W.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB1B.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB2B.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB3B.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB4B.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB5B.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT1W.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT2W.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT3W.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT4W.png</itemPath>
+        <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT5W.png</itemPath>
+      </logicalFolder>
       <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/Game.ui</itemPath>
       <itemPath>/home/jsiler/NetBeansProjects/QtApplication_1/images.qrc</itemPath>
     </logicalFolder>
@@ -32,6 +59,9 @@
       <itemPath>Makefile</itemPath>
     </logicalFolder>
   </logicalFolder>
+  <sourceRootList>
+    <Elem>/home/jsiler/NetBeansProjects/QtApplication_1/Images</Elem>
+  </sourceRootList>
   <projectmakefile>Makefile</projectmakefile>
   <confs>
     <conf name="Debug" type="4">
@@ -56,6 +86,131 @@
             flavor2="0">
       </item>
       <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Game.ui"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB1B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB2B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB3B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB4B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB5B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT1W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT2W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT3W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT4W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT5B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT5W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB1B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB2B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB3B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB4B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB5B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT1W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT2W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT3W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT4W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT5W.png"
             ex="false"
             tool="3"
             flavor2="0">
@@ -113,6 +268,131 @@
             flavor2="0">
       </item>
       <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Game.ui"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB1B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB2B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB3B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB4B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBB5B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT1W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT2W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT3W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT4W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT5B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointBT5W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB1B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB2B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB3B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB4B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWB5B.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT1W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT2W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT3W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT4W.png"
+            ex="false"
+            tool="3"
+            flavor2="0">
+      </item>
+      <item path="/home/jsiler/NetBeansProjects/QtApplication_1/Images/PointWT5W.png"
             ex="false"
             tool="3"
             flavor2="0">
