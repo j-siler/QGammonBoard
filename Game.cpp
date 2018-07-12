@@ -15,6 +15,7 @@
 
 #include "Game.h"
 #include "Point.h"
+
 Game::Game() {
   widget.setupUi(this);
   centralWidget()->setStyleSheet("background-color:darkred;");
@@ -33,16 +34,13 @@ Game::Game() {
   widget.redOff->setStyleSheet("background-color:darkgreen;");
   QObject::connect(widget.pushButton, SIGNAL(pressed()), widget.pt01, SLOT(handleButtonPress()));
   QObject::connect(widget.pushButton, SIGNAL(released()), widget.pt01, SLOT(handleButtonRelease()));
-
+  QObject::connect(widget.pt02, SIGNAL(clicked()), widget.pt05, SLOT(handleButtonPress()));
+  QObject::connect(widget.pt03, SIGNAL(clicked()), widget.pt05, SLOT(handleButtonRelease()));
 }
 
 Game::~Game() {
 }
 
-void Game::mousePressEvent(QMouseEvent* event){
-  qDebug()<<"MousePressEvent x="<<1;
-//          <<event->x()
-//          <<", y="
-//          <<event->y();
-  
+void Game::mousePressEvent(QMouseEvent* event) {
+  qDebug() << "MousePressEvent x=" << 1;
 }

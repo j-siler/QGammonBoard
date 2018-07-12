@@ -19,11 +19,22 @@ Point::Point(QWidget *parent) : QLabel(parent) {
 Point::~Point() {
 }
 
-void Point::handleButtonPress(){
+void Point::handleButtonPress() {
   setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlackW5.png")));
 }
 
-void Point::handleButtonRelease(){
+void Point::handleButtonRelease() {
   setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlack.png")));
 }
 
+void Point::mousePressEvent(QMouseEvent* event) {
+  emit clicked();
+}
+
+void Point::setState(const State &s) {
+  if (s == m_state)
+    return;
+  bool isTop(s.position > 12), isBlack(s.position % 2);
+  m_state = s;
+  
+}

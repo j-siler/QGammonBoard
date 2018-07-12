@@ -102,7 +102,7 @@ public:
         horizontalLayout = new QHBoxLayout(centralwidget);
         horizontalLayout->setSpacing(2);
         horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        horizontalLayout->setContentsMargins(2, 2, 2, 2);
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
         leftBoard = new QWidget(centralwidget);
         leftBoard->setObjectName(QStringLiteral("leftBoard"));
         QSizePolicy sizePolicy1(QSizePolicy::MinimumExpanding, QSizePolicy::Preferred);
@@ -134,7 +134,7 @@ public:
         sizePolicy3.setHeightForWidth(pt13->sizePolicy().hasHeightForWidth());
         pt13->setSizePolicy(sizePolicy3);
         pt13->setMinimumSize(QSize(60, 0));
-        pt13->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopBlack.png")));
+        pt13->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBT.png")));
         pt13->setScaledContents(true);
 
         horizontalLayout_2->addWidget(pt13);
@@ -144,7 +144,7 @@ public:
         sizePolicy3.setHeightForWidth(pt14->sizePolicy().hasHeightForWidth());
         pt14->setSizePolicy(sizePolicy3);
         pt14->setMinimumSize(QSize(60, 0));
-        pt14->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopWhite.png")));
+        pt14->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWT.png")));
         pt14->setScaledContents(true);
 
         horizontalLayout_2->addWidget(pt14);
@@ -154,7 +154,7 @@ public:
         sizePolicy3.setHeightForWidth(pt15->sizePolicy().hasHeightForWidth());
         pt15->setSizePolicy(sizePolicy3);
         pt15->setMinimumSize(QSize(60, 0));
-        pt15->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopBlack.png")));
+        pt15->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBT.png")));
         pt15->setScaledContents(true);
 
         horizontalLayout_2->addWidget(pt15);
@@ -164,7 +164,7 @@ public:
         sizePolicy3.setHeightForWidth(pt16->sizePolicy().hasHeightForWidth());
         pt16->setSizePolicy(sizePolicy3);
         pt16->setMinimumSize(QSize(60, 0));
-        pt16->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopWhite.png")));
+        pt16->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWT.png")));
         pt16->setScaledContents(true);
 
         horizontalLayout_2->addWidget(pt16);
@@ -174,7 +174,7 @@ public:
         sizePolicy3.setHeightForWidth(pt17->sizePolicy().hasHeightForWidth());
         pt17->setSizePolicy(sizePolicy3);
         pt17->setMinimumSize(QSize(60, 0));
-        pt17->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopBlack.png")));
+        pt17->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBT.png")));
         pt17->setScaledContents(true);
 
         horizontalLayout_2->addWidget(pt17);
@@ -184,7 +184,7 @@ public:
         sizePolicy3.setHeightForWidth(pt18->sizePolicy().hasHeightForWidth());
         pt18->setSizePolicy(sizePolicy3);
         pt18->setMinimumSize(QSize(60, 0));
-        pt18->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopWhite.png")));
+        pt18->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWT.png")));
         pt18->setScaledContents(true);
 
         horizontalLayout_2->addWidget(pt18);
@@ -215,7 +215,7 @@ public:
         sizePolicy3.setHeightForWidth(pt12->sizePolicy().hasHeightForWidth());
         pt12->setSizePolicy(sizePolicy3);
         pt12->setMinimumSize(QSize(60, 0));
-        pt12->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomWhite.png")));
+        pt12->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWB.png")));
         pt12->setScaledContents(true);
 
         horizontalLayout_3->addWidget(pt12);
@@ -225,7 +225,7 @@ public:
         sizePolicy3.setHeightForWidth(pt11->sizePolicy().hasHeightForWidth());
         pt11->setSizePolicy(sizePolicy3);
         pt11->setMinimumSize(QSize(60, 0));
-        pt11->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlack.png")));
+        pt11->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBB.png")));
         pt11->setScaledContents(true);
 
         horizontalLayout_3->addWidget(pt11);
@@ -235,7 +235,7 @@ public:
         sizePolicy3.setHeightForWidth(pt10->sizePolicy().hasHeightForWidth());
         pt10->setSizePolicy(sizePolicy3);
         pt10->setMinimumSize(QSize(60, 0));
-        pt10->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomWhite.png")));
+        pt10->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWB.png")));
         pt10->setScaledContents(true);
 
         horizontalLayout_3->addWidget(pt10);
@@ -245,7 +245,7 @@ public:
         sizePolicy3.setHeightForWidth(pt09->sizePolicy().hasHeightForWidth());
         pt09->setSizePolicy(sizePolicy3);
         pt09->setMinimumSize(QSize(60, 0));
-        pt09->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlack.png")));
+        pt09->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBB.png")));
         pt09->setScaledContents(true);
 
         horizontalLayout_3->addWidget(pt09);
@@ -255,7 +255,7 @@ public:
         sizePolicy3.setHeightForWidth(pt08->sizePolicy().hasHeightForWidth());
         pt08->setSizePolicy(sizePolicy3);
         pt08->setMinimumSize(QSize(60, 0));
-        pt08->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomWhite.png")));
+        pt08->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWB.png")));
         pt08->setScaledContents(true);
 
         horizontalLayout_3->addWidget(pt08);
@@ -265,7 +265,7 @@ public:
         sizePolicy3.setHeightForWidth(pt07->sizePolicy().hasHeightForWidth());
         pt07->setSizePolicy(sizePolicy3);
         pt07->setMinimumSize(QSize(60, 0));
-        pt07->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlack.png")));
+        pt07->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBB.png")));
         pt07->setScaledContents(true);
 
         horizontalLayout_3->addWidget(pt07);
@@ -350,7 +350,7 @@ public:
         sizePolicy3.setHeightForWidth(pt19->sizePolicy().hasHeightForWidth());
         pt19->setSizePolicy(sizePolicy3);
         pt19->setMinimumSize(QSize(60, 0));
-        pt19->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopBlack.png")));
+        pt19->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBT.png")));
         pt19->setScaledContents(true);
 
         horizontalLayout_4->addWidget(pt19);
@@ -360,7 +360,7 @@ public:
         sizePolicy3.setHeightForWidth(pt20->sizePolicy().hasHeightForWidth());
         pt20->setSizePolicy(sizePolicy3);
         pt20->setMinimumSize(QSize(60, 0));
-        pt20->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopWhite.png")));
+        pt20->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWT.png")));
         pt20->setScaledContents(true);
 
         horizontalLayout_4->addWidget(pt20);
@@ -370,7 +370,7 @@ public:
         sizePolicy3.setHeightForWidth(pt21->sizePolicy().hasHeightForWidth());
         pt21->setSizePolicy(sizePolicy3);
         pt21->setMinimumSize(QSize(60, 0));
-        pt21->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopBlack.png")));
+        pt21->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBT.png")));
         pt21->setScaledContents(true);
 
         horizontalLayout_4->addWidget(pt21);
@@ -380,7 +380,7 @@ public:
         sizePolicy3.setHeightForWidth(pt22->sizePolicy().hasHeightForWidth());
         pt22->setSizePolicy(sizePolicy3);
         pt22->setMinimumSize(QSize(60, 0));
-        pt22->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopWhite.png")));
+        pt22->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWT.png")));
         pt22->setScaledContents(true);
 
         horizontalLayout_4->addWidget(pt22);
@@ -390,7 +390,7 @@ public:
         sizePolicy3.setHeightForWidth(pt23->sizePolicy().hasHeightForWidth());
         pt23->setSizePolicy(sizePolicy3);
         pt23->setMinimumSize(QSize(60, 0));
-        pt23->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopBlack.png")));
+        pt23->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBT.png")));
         pt23->setScaledContents(true);
 
         horizontalLayout_4->addWidget(pt23);
@@ -400,7 +400,7 @@ public:
         sizePolicy3.setHeightForWidth(pt24->sizePolicy().hasHeightForWidth());
         pt24->setSizePolicy(sizePolicy3);
         pt24->setMinimumSize(QSize(60, 0));
-        pt24->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointTopWhite.png")));
+        pt24->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWT.png")));
         pt24->setScaledContents(true);
 
         horizontalLayout_4->addWidget(pt24);
@@ -428,7 +428,7 @@ public:
         sizePolicy3.setHeightForWidth(pt06->sizePolicy().hasHeightForWidth());
         pt06->setSizePolicy(sizePolicy3);
         pt06->setMinimumSize(QSize(60, 0));
-        pt06->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomWhite.png")));
+        pt06->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWB.png")));
         pt06->setScaledContents(true);
 
         horizontalLayout_5->addWidget(pt06);
@@ -438,7 +438,7 @@ public:
         sizePolicy3.setHeightForWidth(pt05->sizePolicy().hasHeightForWidth());
         pt05->setSizePolicy(sizePolicy3);
         pt05->setMinimumSize(QSize(60, 0));
-        pt05->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlack.png")));
+        pt05->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBB.png")));
         pt05->setScaledContents(true);
 
         horizontalLayout_5->addWidget(pt05);
@@ -448,7 +448,7 @@ public:
         sizePolicy3.setHeightForWidth(pt04->sizePolicy().hasHeightForWidth());
         pt04->setSizePolicy(sizePolicy3);
         pt04->setMinimumSize(QSize(60, 0));
-        pt04->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomWhite.png")));
+        pt04->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWB.png")));
         pt04->setScaledContents(true);
 
         horizontalLayout_5->addWidget(pt04);
@@ -458,7 +458,7 @@ public:
         sizePolicy3.setHeightForWidth(pt03->sizePolicy().hasHeightForWidth());
         pt03->setSizePolicy(sizePolicy3);
         pt03->setMinimumSize(QSize(60, 0));
-        pt03->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlack.png")));
+        pt03->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBB.png")));
         pt03->setScaledContents(true);
 
         horizontalLayout_5->addWidget(pt03);
@@ -468,7 +468,7 @@ public:
         sizePolicy3.setHeightForWidth(pt02->sizePolicy().hasHeightForWidth());
         pt02->setSizePolicy(sizePolicy3);
         pt02->setMinimumSize(QSize(60, 0));
-        pt02->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomWhite.png")));
+        pt02->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWB.png")));
         pt02->setScaledContents(true);
 
         horizontalLayout_5->addWidget(pt02);
@@ -478,7 +478,7 @@ public:
         sizePolicy3.setHeightForWidth(pt01->sizePolicy().hasHeightForWidth());
         pt01->setSizePolicy(sizePolicy3);
         pt01->setMinimumSize(QSize(60, 0));
-        pt01->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBottomBlack.png")));
+        pt01->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBB.png")));
         pt01->setScaledContents(true);
 
         horizontalLayout_5->addWidget(pt01);

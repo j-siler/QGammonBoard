@@ -15,17 +15,45 @@
 #define POINT_H
 
 #include <QLabel>
+#include <QDebug>
+#include <qt5/QtWidgets/qwidget.h>
 
 class Point : public QLabel{
     Q_OBJECT
 public:
     Point(QWidget *parent = nullptr);
     virtual ~Point();
+    
+    enum class Color{BLACK, RED, NONE};
+    struct State{
+        uint8_t position;
+        uint8_t count;
+        Color color;
+        inline bool operator == (const State& s) const{
+            return color==s.color && count==s.count && position==s.position;
+        }
+        inline const State& operator = (const State &s){
+            color=s.color;
+            count=s.count;
+            position=s.position;
+            return *this;
+        }
+        
+    };
+    inline const State &state() const {return m_state;}
+    void setState(const State &s);
 public slots:
     void handleButtonRelease(void);
     void handleButtonPress(void);
-private:
-
+    inline void repaint(){
+        qDebug()<<"Point::repaint";
+        QLabel::repaint();
+    }
+signals:
+    void clicked();
+protected:
+    void mousePressEvent(QMouseEvent* event);
+    State m_state;
 };
 
 #endif /* POINT_H */

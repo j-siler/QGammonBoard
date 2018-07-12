@@ -23,6 +23,7 @@ public:
     virtual ~Game();
     void mousePressEvent(QMouseEvent *event);
 private:
+    inline int heightForWidth( int width );
     Ui::Game widget;
 };
 

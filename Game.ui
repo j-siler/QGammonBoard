@@ -28,16 +28,16 @@
      <number>2</number>
     </property>
     <property name="leftMargin">
-     <number>2</number>
+     <number>0</number>
     </property>
     <property name="topMargin">
-     <number>2</number>
+     <number>0</number>
     </property>
     <property name="rightMargin">
-     <number>2</number>
+     <number>0</number>
     </property>
     <property name="bottomMargin">
-     <number>2</number>
+     <number>0</number>
     </property>
     <item>
      <widget class="QWidget" name="leftBoard" native="true">
@@ -111,7 +111,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointTopBlack.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBT.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -136,7 +136,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointTopWhite.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWT.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -161,7 +161,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointTopBlack.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBT.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -186,7 +186,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointTopWhite.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWT.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -211,7 +211,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointTopBlack.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBT.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -236,7 +236,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointTopWhite.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWT.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -298,7 +298,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBottomWhite.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWB.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -323,7 +323,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBottomBlack.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBB.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -348,7 +348,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBottomWhite.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWB.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -373,7 +373,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBottomBlack.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBB.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -398,7 +398,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBottomWhite.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWB.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -423,7 +423,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBottomBlack.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBB.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -608,7 +608,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointTopBlack.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBT.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -633,7 +633,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointTopWhite.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWT.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -658,7 +658,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointTopBlack.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBT.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -683,7 +683,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointTopWhite.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWT.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -708,7 +708,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointTopBlack.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBT.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -733,7 +733,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointTopWhite.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWT.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -795,7 +795,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBottomWhite.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWB.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -820,7 +820,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBottomBlack.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBB.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -845,7 +845,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBottomWhite.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWB.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -870,7 +870,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBottomBlack.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBB.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -895,7 +895,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBottomWhite.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWB.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -920,7 +920,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBottomBlack.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBB.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>

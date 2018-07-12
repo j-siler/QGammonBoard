@@ -5,5 +5,9 @@
     <file>Images/PointBottomWhite.png</file>
     <file>Images/PointTopBlack.png</file>
     <file>Images/PointTopWhite.png</file>
+    <file>Images/PointBB.png</file>
+    <file>Images/PointBT.png</file>
+    <file>Images/PointWB.png</file>
+    <file>Images/PointWT.png</file>
   </qresource>
 </RCC>
