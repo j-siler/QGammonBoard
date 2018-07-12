@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1057</width>
-    <height>792</height>
+    <width>900</width>
+    <height>708</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -111,7 +111,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBT.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBT5W.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -211,7 +211,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBT.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBT3B.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -298,7 +298,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointWB.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWB5B.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -398,7 +398,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointWB.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWB3W.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -608,7 +608,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBT.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBT5B.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -729,11 +729,23 @@
               <height>0</height>
              </size>
             </property>
+            <property name="frameShape">
+             <enum>QFrame::NoFrame</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <property name="lineWidth">
+             <number>10</number>
+            </property>
+            <property name="midLineWidth">
+             <number>5</number>
+            </property>
             <property name="text">
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointWT.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWT2W.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -795,7 +807,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointWB.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointWB5W.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -920,7 +932,7 @@
              <string/>
             </property>
             <property name="pixmap">
-             <pixmap resource="images.qrc">:/Images/Images/PointBB.png</pixmap>
+             <pixmap resource="images.qrc">:/Images/Images/PointBB2B.png</pixmap>
             </property>
             <property name="scaledContents">
              <bool>true</bool>
@@ -1013,7 +1025,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1057</width>
+     <width>900</width>
      <height>25</height>
     </rect>
    </property>

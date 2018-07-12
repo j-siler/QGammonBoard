@@ -90,7 +90,7 @@ public:
     {
         if (Game->objectName().isEmpty())
             Game->setObjectName(QStringLiteral("Game"));
-        Game->resize(1057, 792);
+        Game->resize(900, 708);
         QSizePolicy sizePolicy(QSizePolicy::Preferred, QSizePolicy::Preferred);
         sizePolicy.setHorizontalStretch(1);
         sizePolicy.setVerticalStretch(13);
@@ -134,7 +134,7 @@ public:
         sizePolicy3.setHeightForWidth(pt13->sizePolicy().hasHeightForWidth());
         pt13->setSizePolicy(sizePolicy3);
         pt13->setMinimumSize(QSize(60, 0));
-        pt13->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBT.png")));
+        pt13->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBT5W.png")));
         pt13->setScaledContents(true);
 
         horizontalLayout_2->addWidget(pt13);
@@ -174,7 +174,7 @@ public:
         sizePolicy3.setHeightForWidth(pt17->sizePolicy().hasHeightForWidth());
         pt17->setSizePolicy(sizePolicy3);
         pt17->setMinimumSize(QSize(60, 0));
-        pt17->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBT.png")));
+        pt17->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBT3B.png")));
         pt17->setScaledContents(true);
 
         horizontalLayout_2->addWidget(pt17);
@@ -215,7 +215,7 @@ public:
         sizePolicy3.setHeightForWidth(pt12->sizePolicy().hasHeightForWidth());
         pt12->setSizePolicy(sizePolicy3);
         pt12->setMinimumSize(QSize(60, 0));
-        pt12->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWB.png")));
+        pt12->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWB5B.png")));
         pt12->setScaledContents(true);
 
         horizontalLayout_3->addWidget(pt12);
@@ -255,7 +255,7 @@ public:
         sizePolicy3.setHeightForWidth(pt08->sizePolicy().hasHeightForWidth());
         pt08->setSizePolicy(sizePolicy3);
         pt08->setMinimumSize(QSize(60, 0));
-        pt08->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWB.png")));
+        pt08->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWB3W.png")));
         pt08->setScaledContents(true);
 
         horizontalLayout_3->addWidget(pt08);
@@ -350,7 +350,7 @@ public:
         sizePolicy3.setHeightForWidth(pt19->sizePolicy().hasHeightForWidth());
         pt19->setSizePolicy(sizePolicy3);
         pt19->setMinimumSize(QSize(60, 0));
-        pt19->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBT.png")));
+        pt19->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBT5B.png")));
         pt19->setScaledContents(true);
 
         horizontalLayout_4->addWidget(pt19);
@@ -400,7 +400,11 @@ public:
         sizePolicy3.setHeightForWidth(pt24->sizePolicy().hasHeightForWidth());
         pt24->setSizePolicy(sizePolicy3);
         pt24->setMinimumSize(QSize(60, 0));
-        pt24->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWT.png")));
+        pt24->setFrameShape(QFrame::NoFrame);
+        pt24->setFrameShadow(QFrame::Raised);
+        pt24->setLineWidth(10);
+        pt24->setMidLineWidth(5);
+        pt24->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWT2W.png")));
         pt24->setScaledContents(true);
 
         horizontalLayout_4->addWidget(pt24);
@@ -428,7 +432,7 @@ public:
         sizePolicy3.setHeightForWidth(pt06->sizePolicy().hasHeightForWidth());
         pt06->setSizePolicy(sizePolicy3);
         pt06->setMinimumSize(QSize(60, 0));
-        pt06->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWB.png")));
+        pt06->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointWB5W.png")));
         pt06->setScaledContents(true);
 
         horizontalLayout_5->addWidget(pt06);
@@ -478,7 +482,7 @@ public:
         sizePolicy3.setHeightForWidth(pt01->sizePolicy().hasHeightForWidth());
         pt01->setSizePolicy(sizePolicy3);
         pt01->setMinimumSize(QSize(60, 0));
-        pt01->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBB.png")));
+        pt01->setPixmap(QPixmap(QString::fromUtf8(":/Images/Images/PointBB2B.png")));
         pt01->setScaledContents(true);
 
         horizontalLayout_5->addWidget(pt01);
@@ -535,7 +539,7 @@ public:
         Game->setCentralWidget(centralwidget);
         menubar = new QMenuBar(Game);
         menubar->setObjectName(QStringLiteral("menubar"));
-        menubar->setGeometry(QRect(0, 0, 1057, 25));
+        menubar->setGeometry(QRect(0, 0, 900, 25));
         menuBoard = new QMenu(menubar);
         menuBoard->setObjectName(QStringLiteral("menuBoard"));
         menuOptions = new QMenu(menubar);

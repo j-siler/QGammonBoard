@@ -41,19 +41,22 @@ public:
         
     };
     inline const State &state() const {return m_state;}
-    void setState(const State &s);
+    static void add(Point* pP, uint8_t at);
 public slots:
-    void handleButtonRelease(void);
-    void handleButtonPress(void);
+    void setState(const State &s);
+    void handleButtonRelease(Point*);
+    void handleButtonPress(Point*);
     inline void repaint(){
         qDebug()<<"Point::repaint";
         QLabel::repaint();
     }
 signals:
-    void clicked();
+    void clicked(Point*);
 protected:
     void mousePressEvent(QMouseEvent* event);
     State m_state;
+    static QVector<Point*> m_points;
+
 };
 
 #endif /* POINT_H */

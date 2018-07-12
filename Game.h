@@ -25,6 +25,7 @@ public:
 private:
     inline int heightForWidth( int width );
     Ui::Game widget;
+    
 };
 
 #endif /* _GAME_H */

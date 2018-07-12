@@ -1,11 +1,46 @@
 <RCC>
   <qresource prefix="Images">
-    <file>Images/PointBottomBlackW5.png</file>
-    <file>Images/PointBottomBlack.png</file>
-    <file>Images/PointBottomWhite.png</file>
-    <file>Images/PointTopBlack.png</file>
-    <file>Images/PointTopWhite.png</file>
     <file>Images/PointBB.png</file>
+    <file>Images/PointBB1B.png</file>
+    <file>Images/PointBB1W.png</file>
+    <file>Images/PointBB2B.png</file>
+    <file>Images/PointBB2W.png</file>
+    <file>Images/PointBB3B.png</file>
+    <file>Images/PointBB3W.png</file>
+    <file>Images/PointBB4B.png</file>
+    <file>Images/PointBB4W.png</file>
+    <file>Images/PointBB5B.png</file>
+    <file>Images/PointBB5W.png</file>
+    <file>Images/PointBT1B.png</file>
+    <file>Images/PointBT1W.png</file>
+    <file>Images/PointBT2B.png</file>
+    <file>Images/PointBT2W.png</file>
+    <file>Images/PointBT3B.png</file>
+    <file>Images/PointBT3W.png</file>
+    <file>Images/PointBT4B.png</file>
+    <file>Images/PointBT4W.png</file>
+    <file>Images/PointBT5B.png</file>
+    <file>Images/PointBT5W.png</file>
+    <file>Images/PointWB1B.png</file>
+    <file>Images/PointWB1W.png</file>
+    <file>Images/PointWB2B.png</file>
+    <file>Images/PointWB2W.png</file>
+    <file>Images/PointWB3B.png</file>
+    <file>Images/PointWB3W.png</file>
+    <file>Images/PointWB4B.png</file>
+    <file>Images/PointWB4W.png</file>
+    <file>Images/PointWB5B.png</file>
+    <file>Images/PointWB5W.png</file>
+    <file>Images/PointWT1B.png</file>
+    <file>Images/PointWT1W.png</file>
+    <file>Images/PointWT2B.png</file>
+    <file>Images/PointWT2W.png</file>
+    <file>Images/PointWT3B.png</file>
+    <file>Images/PointWT3W.png</file>
+    <file>Images/PointWT4B.png</file>
+    <file>Images/PointWT4W.png</file>
+    <file>Images/PointWT5B.png</file>
+    <file>Images/PointWT5W.png</file>
     <file>Images/PointBT.png</file>
     <file>Images/PointWB.png</file>
     <file>Images/PointWT.png</file>
